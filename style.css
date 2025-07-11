@@ -1,63 +1,71 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #f4f4f9, #e0e0e5); /* Gradiente linear */
-    color: #333;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradiente moderno */
+    color: #fff;
     line-height: 1.6;
 }
 
 header {
-    background-color: #4CAF50;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradiente no header */
     color: white;
-    padding: 20px 10px;
+    padding: 30px 20px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    background-color: #333;
+    background: linear-gradient(to right, #43cea2, #185a9d); /* Gradiente no nav */
+    padding: 10px 0;
 }
 
 nav a {
     color: white;
-    padding: 10px 15px;
+    padding: 15px 20px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    transition: background 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #575757;
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }
 
 main {
-    padding: 20px;
+    padding: 40px;
     max-width: 1200px;
     margin: auto;
+    background: rgba(255, 255, 255, 0.1); /* Transparência no fundo */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 main h2 {
-    color: #4CAF50;
-    margin-bottom: 10px;
+    color: #ff7e5f;
+    margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 main p {
     margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 footer {
-    background-color: #333;
+    background: linear-gradient(to right, #232526, #414345); /* Gradiente no footer */
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -69,16 +77,19 @@ footer p {
 }
 
 button {
-    background-color: #4CAF50;
+    background: linear-gradient(to right, #ff512f, #dd2476); /* Gradiente no botão */
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 12px 20px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+    background: linear-gradient(to right, #dd2476, #ff512f); /* Inverte gradiente no hover */
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
@@ -93,5 +104,9 @@ button:hover {
     nav a {
         text-align: center;
         padding: 10px;
+    }
+
+    main {
+        padding: 20px;
     }
 }
