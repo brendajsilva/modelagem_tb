@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background: linear-gradient(to bottom, #f4f4f9, #e0e0e5); /* Gradiente linear */
     color: #333;
     line-height: 1.6;
 }
